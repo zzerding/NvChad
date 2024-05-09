@@ -2,16 +2,24 @@ local M = {}
 
 M.treesitter = {
   ensure_installed = {
-    "vim",
     "lua",
+    "c",
+    "vim",
+    --web--
     "html",
     "css",
     "javascript",
     "typescript",
     "tsx",
-    "c",
+    --markdown--
     "markdown",
     "markdown_inline",
+    --go--
+    "go",
+    "gomod",
+    "gosum",
+    "gotmpl"
+
   },
   indent = {
     enable = true,
@@ -39,7 +47,11 @@ M.mason = {
     "clang-format",
 
     -- python stuff
-    "pyright"
+    "pyright",
+
+    --golang--
+    "gopls",
+    "goimports_reviser"
   },
 }
 

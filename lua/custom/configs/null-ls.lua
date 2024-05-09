@@ -17,6 +17,13 @@ local sources = {
 
   -- cpp
   b.formatting.clang_format,
+
+  --go
+  -- b.formatting.gofumpt,
+  -- b.formatting.goimports,
+  b.formatting.goimports_reviser.with {
+    extra_args = { "-rm-unused", "-set-alias", "-format" },
+  },
 }
 
 null_ls.setup {
