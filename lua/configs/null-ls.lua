@@ -16,14 +16,17 @@ local sources = {
   b.formatting.stylua,
 
   -- cpp
-  b.formatting.clang_format,
+  -- b.formatting.clang_format,
 
   --go
-  -- b.formatting.gofumpt,
-  b.formatting.goimports,
+  -- b.formatting.gofmt
+  -- b.formatting.goimports,
   b.formatting.goimports_reviser.with {
     extra_args = { "-rm-unused", "-set-alias", "-format" },
   },
+  --bash
+  b.formatting.shfmt,
+
 }
 
 null_ls.setup {

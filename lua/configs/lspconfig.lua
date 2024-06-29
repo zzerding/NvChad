@@ -15,7 +15,10 @@ local servers = {
   "clangd",
 
   --golang--
-   "gopls"
+   "gopls",
+
+  --bash--
+  "bashls"
 }
 
 -- lsps with default config
@@ -33,4 +36,3 @@ lspconfig.tsserver.setup {
   on_init = on_init,
   capabilities = capabilities,
 }
-
